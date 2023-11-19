@@ -1,3 +1,4 @@
+/*Überschriften*/
 h1{
     background-image:linear-gradient(0deg,#1874CD,#8B008B,#000080);
     -webkit-background-clip: text;
@@ -19,31 +20,15 @@ h3{
     text-decoration: underline;
     text-align: center;
 }
+h4{
+	text-decoration: underline solid;
+	text-align: center;
+	color: #FF1493;
+}
+/*Text*/
 p{
     color: #000000;
 }
-body{
-    background-color: #D4D4D4;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #1874CD;
-   }
-table{
-    object-position: center;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-   }
-footer{
-    padding: 10px 0;
-
-    background-color: #000080;
-    color: #FF6A6A;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-}
-
 p1{
     color: #FF6A6A;
 }
@@ -51,6 +36,28 @@ p2{
 
     color: #00008B;
 }
+p3{
+	text-align: center;
+	color: #000000;
+}
+p4{
+
+}
+/**/
+body{
+    background-color: #D4D4D4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #1874CD;
+   }
+
+table{
+    object-position: center;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+   }
+
 nav > ul {
 	list-style: none;
 	list-style: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E");
@@ -60,7 +67,6 @@ nav > ul {
 	flex-direction: column;
 	position: relative;
 }
-
 nav li {
 	margin: 0.5em 0 0.5em 0.5em;
 	padding: 0;
@@ -77,7 +83,6 @@ nav li {
 		font-size: 1em;
 	}
 }
-
 nav a {
 	display: block;
 	padding: 0.4em;
@@ -91,12 +96,10 @@ nav a {
 	transition: all .25s ease-in;
 	position: relative;
 }
-
 nav li[aria-current] a {
 	background-color: var(--accent2-color);
 	color: var(--accent1-color);
 }
-
 nav .subtitle::after {
 	position: absolute;
 	content: " ▶";
@@ -105,12 +108,10 @@ nav .subtitle::after {
 	width: 2em;
 	right: 0;
 }
-
 nav .subtitle:hover::after,
 nav .subtitle:focus::after {
 	content: " ▼";
 }
-
 nav a:focus,
 nav a:hover,
 nav li[aria-current] a:focus,
@@ -119,34 +120,70 @@ nav li[aria-current] a:hover {
 	background-color: var(--accent1-color);
 }
 /*     submenu navigation links      */
-
 nav .submenu {
 	visibility: hidden;
 	height: 0;
 	z-index: 1000;
 }
-
 nav .submenu li {
 	display: block;
 	/* width: 15em; */
 }
 /**     Show the submenu on hover, focus     **/
-
 nav li:hover .submenu,
 nav li:active .submenu,
 nav li:focus .submenu {
 	visibility: visible;
 	height: auto;
 }
-
 nav li:focus-within .submenu {
 	visibility: visible;
 	height: auto;
 }
-
 :root {
 	--background-color: #1874CD;
 	--accent1-color: #8B08B0;
 	--accent2-color: darkred;
 	--text-color: black;
 }
+
+footer{
+    padding: 10px 0;
+
+    background-color: #000080;
+    color: #FF6A6A;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+.back-to-top {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background: linear-gradient(to right, #ff5f6d, #ffc371, #fffc00);
+	border-radius: 50%;
+	color: #fff;
+	text-align: center;
+	font-size: 24px;
+	line-height: 48px;
+	text-decoration: none;
+	transition: opacity 0.2s ease-in-out;
+  }
+  
+  .back-to-top:hover {
+	opacity: 0.8;
+  }
+  
+  .back-to-top i {
+	margin-top: 12px;
+  }
+  
+  /* Zeige den Button, wenn der Benutzer 100px gescrollt hat */
+  @media (min-height: 50px) {
+	.back-to-top {
+	  display: block;
+	}
+  }
