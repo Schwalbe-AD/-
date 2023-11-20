@@ -14,7 +14,7 @@ h2{
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    text-align: center;
    text-decoration-color: #FF6A6A;
-   color: #FF6A6A;
+   color: #FF6A6A; 
 }
 h3{
     text-decoration: underline;
@@ -160,16 +160,13 @@ footer{
 	display: none;
 	position: fixed;
 	bottom: 20px;
-	right: 20px;
+	right: 30px;
 	width: 50px;
 	height: 50px;
-	background: linear-gradient(to right, #ff5f6d, #ffc371, #fffc00);
 	border-radius: 50%;
-	color: #fff;
 	text-align: center;
 	font-size: 24px;
 	line-height: 48px;
-	text-decoration: none;
 	transition: opacity 0.2s ease-in-out;
   }
   
